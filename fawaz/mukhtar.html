@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>UI Design sample</title>
+</head>
+<body>
+	<style>
+		body{
+			background-color: #999;
+			font-family: sans-serif;
+		}
+		.app{
+			background-color: #fff;
+			width: 200px;
+			padding: 20px 40px;
+			border-radius: 20px;
+		}
+		header h2{
+			margin-bottom: 0;
+		}
+
+		header{
+			margin-bottom: 30px;
+		}
+		.authors{
+			list-style: none;
+			padding-left: 0;
+
+		}
+		.authors li{
+			width: 70%;
+			border: 0.2px #ddd solid;
+			border-radius: 9px;
+			margin-bottom: 5px;
+		}
+		.authors li div{
+			display: flex;
+			justify-content: space-evenly;
+		}
+		.authors li div img{
+			width: 45px;
+		}
+		.authors li div p{
+			font-size: 0.8em;
+		}
+
+	</style>
+	<div class="app">
+		<header>
+			<h2>Vacation ideas</h2>
+			<p>76 photos collected by</p>
+		</header>
+
+		<ul class="authors">
+			<li>
+				<div>
+					<img src="chrome-original.svg" alt="">
+					<p>Isabel Sims</p>
+				</div>
+			</li>
+			<li>
+				<div>
+					<img src="firefox-original.svg" alt="">
+					<p>Clayton Greene</p>
+				</div>
+			</li>
+			<li>
+				<div>
+					<img src="git-original.svg" alt="">
+					<p>Della Elliott</p>
+				</div>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>
