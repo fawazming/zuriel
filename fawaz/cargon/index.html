@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicon-16x16.png"
+    />
+    <link rel="manifest" href="img/site.webmanifest" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cargon App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-[#ffeeff] flex justify-center">
+    <div class="app bg-white" style="width: 320px" id="converter">
+      <header class="bg-[#b27ae3] text-[#fbeffb]">
+        <nav class="flex justify-between px-6 py-5">
+          <a href="#converter" class="active:text-white active:font-semibold"
+            >Converter</a
+          >
+          <div class="border"></div>
+          <a href="" class="active:text-white active:font-semibold">Rates</a>
+          <div class="border"></div>
+          <a href="" class="active:text-white active:font-semibold">Info</a>
+        </nav>
+      </header>
+      <main class="px-4 flex flex-col justify-center mt-5">
+        <input
+          type="number"
+          class="border-2 block text-2xl font-bold text-center text-black"
+          value="250"
+        />
+        <div class="text-center my-3">
+          <select name="" id="">
+            <option value="">USD</option>
+            <option value="">GBP</option>
+          </select>
+          <span>to</span>
+          <select name="" id="">
+            <option value="">USD</option>
+            <option value="">GBP</option>
+          </select>
+          <input type="submit" value="GO" id="" class="rounded-full font-semibold shadow-lg bg-red-400 px-2 text-white py-2" />
+        </div>
+
+        <div class="text-center mt-10">
+          <p class="text-4xl font-bold">224.32 EUR</p>
+          <p class="">1 USD = 0.90 EUR</p>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
