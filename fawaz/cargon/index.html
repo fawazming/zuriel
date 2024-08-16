@@ -41,7 +41,8 @@
         <input
           type="number"
           class="border-2 block text-2xl font-bold text-center text-black"
-          value="250"
+          id="input"
+          value="0"
         />
         <div class="text-center my-3">
           <select name="" id="">
@@ -53,14 +54,26 @@
             <option value="">USD</option>
             <option value="">GBP</option>
           </select>
-          <input type="submit" value="GO" id="" class="rounded-full font-semibold shadow-lg bg-red-400 px-2 text-white py-2" />
+          <input type="submit" value="GO" id="go" class="rounded-full font-semibold shadow-lg bg-red-400 px-2 text-white py-2 focus:bg-black" />
         </div>
 
         <div class="text-center mt-10">
-          <p class="text-4xl font-bold">224.32 EUR</p>
+          <p class="text-4xl font-bold" id="output"><b>--</p>
           <p class="">1 USD = 0.90 EUR</p>
         </div>
       </main>
     </div>
+    <script>
+      const rate = 0.9;
+      let output = document.querySelector('#output').innerText;
+      let input = document.querySelector('#input').value;
+
+      // Listen to event
+      document.querySelector('#go').addEventListener('click', ()=>{
+        let input = document.querySelector('#input').value;
+        let conv = input * rate;
+        document.querySelector('#output').innerHTML = `<b> &#x20ac;${conv}</b>`;
+      })
+    </script>
   </body>
 </html>

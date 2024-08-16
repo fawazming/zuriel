@@ -1,0 +1,53 @@
+body {
+    font-family: sans-serif;
+  }
+  header {
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+    justify-content: flex-end;
+  }
+  header a{
+      margin-right: 10px;
+      text-decoration: none;
+      color: #000;
+  }
+  .goxjub {
+    width: 32px;
+    height: 32px;
+  }
+  .flex {
+    display: flex;
+  }
+  .justify-between {
+    justify-content: space-between;
+  }
+  .justify-center {
+    justify-content: center;
+  }
+  .btn-blue{
+      background-color: #3d24c9;
+      border-radius: 20px;
+      padding: 12px  15px;
+      color: #fff;
+  }
+  .sbox{
+    border: 1px #ccc solid;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    padding: 5px 15px;
+  }
+  .sbox input{
+    border:0;
+    width: 80%;
+    margin-right: 10px;
+    font-size: 1.1rem;
+  }
+  .sbox input:focus{
+    border: 0;
+  }
+  .icon{
+    width: 24px;
+    margin-right: 10px;
+  }
