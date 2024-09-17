@@ -25,12 +25,15 @@
         <div class="flex justify-center">
             <img src="google.png" alt="" width="50%" />
         </div>
+        <form action="" id="search">
       <div class="sbox">
         <img class="icon"
           src="https://icongr.am/material/magnify.svg?size=64&color=4d4d4d"
           alt=""
         />
-        <input type="search" />
+        
+          <input type="search" id="sbar" />
+        </form>
         <!-- mic -->
         <svg
           class="goxjub icon"
@@ -78,6 +81,7 @@
           </g>
         </svg>
         </div>
+        <center><p id="output"></p></center>
         <!-- <div class="">
           <a href="">Google Search</a>
           <a href="">I'm Feeling Lucky</a>
@@ -88,5 +92,23 @@
           <a href="">Èdè Yorùbá</a> <a href="">Nigerian Pidgin</a>
         </p> -->
     </main>
+    <script>
+      let search = document.querySelector('#search');
+      let sbar = document.querySelector('#sbar');
+      let output = document.querySelector('#output');
+
+      search.addEventListener('submit', (e)=>{
+        e.preventDefault();
+        // let pluralized = `${sbar.value}s` ;
+        // output.innerHTML = pluralized;
+        output.innerHTML = plural(sbar.value);
+        // output.innerHTML = `${sbar.value}s`;
+      })
+
+      function plural(word) {
+          // let pluralized = `${word}s` ;
+          return `${word}s`;
+      }
+    </script>
   </body>
 </html>
