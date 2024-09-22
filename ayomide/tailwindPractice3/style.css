@@ -1,0 +1,22 @@
+#fixed {
+    position: fixed;
+    bottom: 8px;
+    right: 20px;
+}
+.bdy{
+    background-color: #1c2430;
+}
+.head{
+    background-color: #1c2430;
+    box-shadow: 0;
+}
+.box{
+    background-color: #1c2430;
+    color: white;
+}
+.text{
+    color: white;
+}
+.support{
+    background-color: #334155;
+}

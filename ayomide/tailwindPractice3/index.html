@@ -23,13 +23,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Foundation | The Odin Project</title>
-  <style>
-    #fixed{
-      position: fixed;
-      bottom: 8px;
-      right: 20px;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-[#fcfcfc]">
@@ -40,41 +34,34 @@
   </svg>
 </a>
   <!-- Header -->
-  <header class="flex justify-between px-7 py-2 shadow-sm shadow-[#cbcfd6] bg-white">
+  <header class="flex justify-between px-7 py-2 shadow-sm shadow-[#cbcfd6] bg-white" id="head">
     <div class="">
       <img src="images/log.png" alt="" style="width: 190px" />
     </div>
     <div class="hidden lg:flex items-center text-sm">
       <nav class="">
         <ul class="flex text-[#6b7280] font-semibold">
-          <li class="ml-8 hover:text-black hover:border-b-2 hover:border-solid hover:border-[#6b7280] hover:pb-2">
+          <li class="ml-8 hover:text-black hover:border-b-2 hover:border-solid hover:border-[#6b7280] hover:pb-2" >
             All Paths
           </li>
-          <li class="ml-8 hover:text-black hover:border-b-2 hover:border-solid hover:border-[#6b7280] hover:pb-2">
+          <li class="ml-8 hover:text-black hover:border-b-2 hover:border-solid hover:border-[#6b7280] hover:pb-2" >
             About
           </li>
-          <li class="ml-8 hover:text-black hover:border-b-2 hover:border-solid hover:border-[#6b7280] hover:pb-2">
+          <li class="ml-8 hover:text-black hover:border-b-2 hover:border-solid hover:border-[#6b7280] hover:pb-2" >
             Community
           </li>
-          <li class="ml-8 hover:text-black hover:border-b-2 hover:border-solid hover:border-[#6b7280] hover:pb-2">
+          <li class="ml-8 hover:text-black hover:border-b-2 hover:border-solid hover:border-[#6b7280] hover:pb-2" >
             Support us
           </li>
-          <li class="ml-8 hover:text-black hover:border-b-2 hover:border-solid hover:border-[#6b7280] hover:pb-2">
+          <li class="ml-8 hover:text-black hover:border-b-2 hover:border-solid hover:border-[#6b7280] hover:pb-2" >
             Sign in
           </li>
         </ul>
       </nav>
       <div class="mx-9">
         <img id="themeIcon" src="https://icongr.am/clarity/sun.svg?size=20&color=9ca3af" style="cursor: pointer;" onclick="theme()" alt="" />
-        <script>
-          function theme() {
-            document.querySelector('#themeIcon').src = `https://icongr.am/clarity/moon.svg?size=20&color=9ca3af`
-            document.querySelector('body').classList.toggle('bg-black')
-            document.querySelector('body').classList.toggle('text-white')
-          }
-        </script>
       </div>
-      <button class="bg-[#0F766e] text-white py-2 px-3 rounded-md">
+      <button class="bg-[#0F766e] text-white py-2 px-3 rounded-md" >
         Get Started
       </button>
     </div>
@@ -88,10 +75,10 @@
           <img src="images/foundationLogo.svg" alt="" class="" />
         </div>
       </center>
-      <h1 class="text-3xl font-semibold text-center">Foundations Course</h1>
+      <h1 class="text-3xl font-semibold text-center" id="text1">Foundations Course</h1>
       <center>
         <div class="text-left mt-5 w-3/5">
-          <h2 class="text-lg mb-1">Overview</h2>
+          <h2 class="text-lg mb-1" id="text2">Overview</h2>
           <p class="text-[#6b7280]">
             This is where it all begins! A hands-on introduction to all of the
             essential tools you'll need to build real, working websites.
@@ -105,7 +92,7 @@
   <!-- Hero End -->
   <!-- Introduction -->
   <center>
-    <div class="shadow-sm w-3/5 bg-white rounded-md text-left pb-5 mb-9">
+    <div class="shadow-sm w-3/5 bg-white rounded-md text-left pb-5 mb-9" id="box1">
       <h1 class="font-semibold text-lg py-4 pl-5">Introduction</h1>
       <hr class="mb-5">
       <div class="pl-3 hover:bg-[#e0dede] hover:rounded-md py-2 mx-3 mb-3">
@@ -158,7 +145,7 @@
   <!-- Introduction Ends -->
   <!-- Prerequisities -->
   <center>
-    <div class="shadow-sm w-3/5 bg-white rounded-md text-left pb-5 mb-9">
+    <div class="shadow-sm w-3/5 bg-white rounded-md text-left pb-5 mb-9" id="box2">
       <h1 class="font-semibold text-lg py-4 pl-5">Prerequisities</h1>
       <hr class="mb-5">
       <div class="pl-3 hover:bg-[#e0dede] hover:rounded-md py-2 mx-3 mb-3">
@@ -229,7 +216,7 @@
   <!-- Prerequisities Ends -->
   <!-- Git Basics -->
   <center>
-    <div class="shadow-sm w-3/5 bg-white rounded-md text-left pb-5 mb-9">
+    <div class="shadow-sm w-3/5 bg-white rounded-md text-left pb-5 mb-9" id="box3">
       <h1 class="font-semibold text-lg py-4 pl-5">Git Basics</h1>
       <hr class="mb-5">
       <div class="pl-3 hover:bg-[#e0dede] hover:rounded-md py-2 mx-3 mb-3">
@@ -255,7 +242,7 @@
   <!-- Git Basics Ends -->
   <!-- HTML Foundations -->
   <center>
-    <div class="shadow-sm w-3/5 bg-white rounded-md text-left pb-5 mb-9">
+    <div class="shadow-sm w-3/5 bg-white rounded-md text-left pb-5 mb-9" id="box4">
       <h1 class="font-semibold text-lg py-4 pl-5">HTML Foundations</h1>
       <hr class="mb-5">
       <div class="pl-3 hover:bg-[#e0dede] hover:rounded-md py-2 mx-3 mb-3">
@@ -334,7 +321,7 @@
   <!-- Ends -->
   <!-- CSS Foundations -->
   <center>
-    <div class="shadow-sm w-3/5 bg-white rounded-md text-left pb-5 mb-9">
+    <div class="shadow-sm w-3/5 bg-white rounded-md text-left pb-5 mb-9" id="box5">
       <h1 class="font-semibold text-lg py-4 pl-5">CSS Foundations</h1>
       <hr class="mb-5">
       <div class="pl-3 hover:bg-[#e0dede] hover:rounded-md py-2 mx-3 mb-3">
@@ -387,7 +374,7 @@
   <!-- Ends -->
   <!-- Flexbox -->
   <center>
-    <div class="shadow-sm w-3/5 bg-white rounded-md text-left pb-5 mb-9">
+    <div class="shadow-sm w-3/5 bg-white rounded-md text-left pb-5 mb-9"id="box6">
       <h1 class="font-semibold text-lg py-4 pl-5">Flexbox</h1>
       <hr class="mb-5">
       <div class="pl-3 hover:bg-[#e0dede] hover:rounded-md py-2 mx-3 mb-3">
@@ -439,7 +426,7 @@
   <!-- Ends -->
   <!-- JavaScript Basics -->
   <center>
-    <div class="shadow-sm w-3/5 bg-white rounded-md text-left pb-5 mb-9">
+    <div class="shadow-sm w-3/5 bg-white rounded-md text-left pb-5 mb-9" id="box7">
       <h1 class="font-semibold text-lg py-4 pl-5">JavaScript Basics</h1>
       <hr class="mb-5">
       <div class="pl-3 hover:bg-[#e0dede] hover:rounded-md py-2 mx-3 mb-3">
@@ -579,7 +566,7 @@
   <!-- Ends -->
   <!-- Conclusion -->
   <center>
-    <div class="shadow-sm w-3/5 bg-white rounded-md text-left pb-5 mb-20">
+    <div class="shadow-sm w-3/5 bg-white rounded-md text-left pb-5 mb-20" id="box8"> 
       <h1 class="font-semibold text-lg py-4 pl-5">Conclusion</h1>
       <hr class="mb-5">
       <div class="pl-3 hover:bg-[#e0dede] hover:rounded-md py-2 mx-3 mb-3">
@@ -594,7 +581,7 @@
   </center>
   <!-- Ends -->
   <!-- Support Us -->
-  <div class="bg-[#e0dede] mb-10">
+  <div class="bg-[#e0dede] mb-10" id="supportUs">
     <h1 class="text-center text-4xl font-semibold pt-24 pb-5">Support Us!</h1>
     <center>
       <p class="text-center md:w-5/12 text-[#6b7280] pb-7">The Odin Project is funded by the community. Join us in
@@ -658,6 +645,8 @@
     </center>
     <p class="py-10 pl-8 text-sm text-[#6b7280]">© 2024 The Odin Project. All rights reserved.</p>
   </div>
+
+  <script src="script.js"></script>
 </body>
 
 </html>
